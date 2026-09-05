@@ -29,14 +29,13 @@ Four short videos walk through the whole thing. They're linked again in the sect
 
 ## Ways to build it
 
-This is documented to be built from scratch. Every component is off-the-shelf and linked in the [bill of materials](#bill-of-materials), all four printed parts are in [`hardware/`](hardware/) as STL files, and the wiring is spelled out end to end. Nothing here requires buying anything from me.
+This is documented to be built yourself. Every commodity component is off-the-shelf and linked in the [bill of materials](#bill-of-materials), all four printed parts are in [`hardware/`](hardware/) as STL files, and the wiring is spelled out end to end. The one piece you get from me is the **PNP Sensor Power Supply PCB** — the boost/isolation board that sits between the press and the sensor — sold assembled because it's the part that's genuinely fiddly to source and build on your own.
 
-That said, the power/isolation board is the one piece that's genuinely fiddly to source, so I offer it assembled — and the whole thing as a kit if you'd rather skip the printing and crimping. Take this as far down the DIY path as you want:
+If you'd rather skip the printing and crimping altogether, the whole thing is also available built and tested. Two ways to go:
 
 | Level | You supply | You buy ready-made |
 |---|---|---|
-| **Full DIY** | Everything — parts ordered from the BOM links, all four pieces printed on your own machine, your own power/isolation board, all wiring and tuning | — |
-| **Mixed** | The commodity parts (sensor, cables, terminal plugs, screws) and the 3D printing | The [PNP Sensor Power Supply PCB](https://go.khcprecision.com/PNP_PCB), assembled |
+| **DIY** | The commodity parts (sensor, cables, terminal plugs, screws) ordered from the BOM links, all four pieces printed on your own machine, the wiring and tuning | The [PNP Sensor Power Supply PCB](https://go.khcprecision.com/PNP_PCB), assembled |
 | **Assembled** | Bolting it to your press and dialing in the distance | A complete, built and tested sensor — what you see in the [unboxing video](https://youtu.be/-Qg1wYBSL-w) |
 
 **Store:** the parts for this build have live **Add to cart** buttons right under this design on [khcprecision.com/diy](https://khcprecision.com/diy); individual parts are also in the [**Parts** section](https://khcprecision.com/store#parts) of the store. Inventory shown on the site is live and I keep it stocked as best I can; orders generally ship within **2–4 business days**.
