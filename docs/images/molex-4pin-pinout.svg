@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1520" height="960" viewBox="0 0 1520 960">
+  <style>
+    .lbl  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 52px; font-weight: 700; fill: #1b2432; }
+    .sub  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 400; fill: #8a97a6; }
+    .cap  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 44px; font-weight: 400; fill: #6f7c8b; }
+    .pin  { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 46px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .lead { stroke-width: 10; stroke-linecap: round; }
+  </style>
+
+  <rect width="1520" height="960" fill="#f4f6f8"/>
+
+  <!-- latch -->
+  <text x="760" y="200" class="cap" text-anchor="middle">Latch up</text>
+  <rect x="680" y="238" width="160" height="130" rx="14" fill="#e3e6e9" stroke="#1b2432" stroke-width="10"/>
+
+  <!-- leader lines -->
+  <line x1="370" y1="482" x2="530" y2="482" class="lead" stroke="#a8b0ba"/>
+  <line x1="370" y1="718" x2="530" y2="718" class="lead" stroke="#1F5FA9"/>
+  <line x1="992"  y1="482" x2="1140" y2="482" class="lead" stroke="#1b2432"/>
+  <line x1="992"  y1="718" x2="1140" y2="718" class="lead" stroke="#7B4B2A"/>
+
+  <!-- connector body -->
+  <rect x="522" y="352" width="478" height="478" rx="42" fill="#ffffff" stroke="#1b2432" stroke-width="12"/>
+  <line x1="761" y1="358" x2="761" y2="824" stroke="#1b2432" stroke-width="7"/>
+  <line x1="528" y1="591" x2="994" y2="591" stroke="#1b2432" stroke-width="7"/>
+
+  <!-- pins -->
+  <circle cx="641" cy="472" r="87" fill="#ffffff" stroke="#a8b0ba" stroke-width="9"/>
+  <text x="641" y="490" class="pin" style="fill:#1b2432">+</text>
+
+  <circle cx="880" cy="472" r="87" fill="#1b2432"/>
+  <text x="880" y="497" class="pin">*</text>
+
+  <circle cx="641" cy="712" r="87" fill="#1F5FA9"/>
+  <text x="641" y="730" class="pin">–</text>
+
+  <circle cx="880" cy="712" r="87" fill="#7B4B2A"/>
+  <text x="880" y="730" class="pin">+</text>
+
+  <!-- labels -->
+  <text x="350" y="470" class="lbl" text-anchor="end">White (+)</text>
+
+  <text x="350" y="705" class="lbl" text-anchor="end">Blue</text>
+  <text x="350" y="775" class="sub" text-anchor="end">GND (–)</text>
+
+  <text x="1160" y="465" class="lbl">Black</text>
+  <text x="1160" y="535" class="sub">SIG (*)</text>
+
+  <text x="1160" y="738" class="lbl">Brown (+)</text>
+</svg>
