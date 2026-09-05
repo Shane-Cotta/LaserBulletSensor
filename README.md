@@ -87,7 +87,7 @@ All four parts are in [`hardware/`](hardware/) as STL files, modeled in millimet
 ![Bracket and linear rod](docs/images/hardware_rendering.png)
 
 - **Material:** PETG or ABS/ASA recommended for stiffness and proximity to the press; PLA works for bench testing.
-- **Suggested settings:** 0.2 mm layers, 3–4 perimeters, 20–30% infill. The bracket and rod carry the sensor's weight and get clamped, so don't skimp on perimeters.
+- **Suggested settings:** 0.2 mm layers, 5 Walls, 20–30% infill. The bracket and rod carry the sensor's weight and get clamped, so don't skimp on perimeters.
 - Print the bracket flat on its long face and the rod on its side so the clamp bore and the sensor holes come out round; add supports only if your orientation needs them.
 - Test-fit the rod in the bracket clamp, the sensor screws in the rod, and the PCB in the housing before final assembly. Tune your slicer's hole/horizontal-expansion compensation if anything is tight.
 
