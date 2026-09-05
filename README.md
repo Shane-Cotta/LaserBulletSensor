@@ -8,7 +8,7 @@ It's a DIY alternative to a commercial bullet sensor, built from off-the-shelf p
 - **Laser Bullet Sensor Linear Rod** — the post the sensor mounts to; slides and rotates in the bracket clamp for height and aim.
 - **PCB Housing (Top + Bottom)** — the box for the **PNP Sensor Power Supply PCB**, with cutouts for the INPUT / OUTPUT plugs and the PNP/NPN switch.
 
-![Laser Bullet Sensor running on the press](docs/images/Powered_up.png)
+![Laser Bullet Sensor running on the press](docs/images/Powered_up.jpg)
 
 > ⚠️ **This is a hobbyist project shared as-is, with no warranty.** A DIY sensor is a backstop, not a substitute for safe reloading practice and visual inspection. Test thoroughly with dummy/empty cases before live loading, and follow Mark 7's guidance for wiring anything into your press. You are responsible for your own machine and your own safety.
 
