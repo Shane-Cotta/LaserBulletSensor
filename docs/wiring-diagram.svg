@@ -1,0 +1,109 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif">
+  <style>
+    .box   { fill:#f4f6f8; stroke:#2b2f33; stroke-width:2; }
+    .inner { fill:#ffffff; stroke:#2b2f33; stroke-width:1.5; }
+    .title { font-size:16px; font-weight:700; fill:#111; }
+    .sub   { font-size:12px; fill:#444; }
+    .pin   { font-size:11px; fill:#222; font-weight:600; }
+    .pwrP  { stroke:#cc2b2b; stroke-width:3; fill:none; }
+    .pwrN  { stroke:#222;    stroke-width:3; fill:none; }
+    .sig   { stroke:#1565c0; stroke-width:3; fill:none; }
+    .laser { stroke:#e02020; stroke-width:3; fill:none; stroke-dasharray:7 5; }
+    .lbl   { font-size:11px; fill:#333; }
+    .note  { font-size:12px; fill:#333; }
+    .warn  { font-size:12px; fill:#9a3412; font-weight:700; }
+    .dom   { fill:none; stroke:#aaa; stroke-width:1.5; stroke-dasharray:4 4; }
+    .domlbl{ font-size:12px; fill:#777; font-weight:700; }
+  </style>
+
+  <rect width="1000" height="700" fill="#ffffff"/>
+
+  <text x="500" y="30" text-anchor="middle" class="title" font-size="20">Laser Bullet Sensor — Wiring</text>
+  <text x="500" y="50" text-anchor="middle" class="sub">Powered from the Mark 7 Autodrive 5 V; sensor side runs at 12 V; PNP output isolated back to the Autodrive</text>
+
+  <!-- domains -->
+  <rect class="dom" x="20" y="75" width="440" height="500"/>
+  <text x="30" y="95" class="domlbl">5V SIDE (Autodrive)</text>
+  <rect class="dom" x="500" y="75" width="480" height="500"/>
+  <text x="512" y="95" class="domlbl">12V SIDE (sensor)</text>
+
+  <!-- Autodrive -->
+  <rect class="box" x="40" y="160" width="180" height="160" rx="8"/>
+  <text x="130" y="185" text-anchor="middle" class="title">Mark 7 Autodrive</text>
+  <text x="130" y="201" text-anchor="middle" class="sub">Bullet Sense port (4-pin)</text>
+  <text x="58" y="240" class="pin">+5V  — Brown (+) pin</text>
+  <text x="58" y="270" class="pin">GND — Blue (−) pin</text>
+  <text x="58" y="300" class="pin">SIG  — Black (*) pin</text>
+  <text x="58" y="315" class="lbl">White (+) pin: not used</text>
+
+  <!-- ATX pigtail note -->
+  <text x="40" y="415" class="note" font-weight="700">ATX 4-pin CPU extension cable</text>
+  <text x="40" y="432" class="note">Plug the Molex end into the Bullet Sense port, cut the other</text>
+  <text x="40" y="447" class="note">end off, and land the three wires on the INPUT plug.</text>
+  <text x="40" y="465" class="warn">Match wires by PIN POSITION, not by yellow/black color.</text>
+  <text x="40" y="480" class="note">See docs/images/molex-4pin-pinout.png (latch up).</text>
+
+  <!-- PCB -->
+  <rect class="box" x="300" y="120" width="400" height="260" rx="8"/>
+  <text x="500" y="145" text-anchor="middle" class="title">PNP Sensor Power Supply PCB</text>
+  <text x="500" y="163" text-anchor="middle" class="sub">5 V → 12 V boost + opto-isolated signal</text>
+
+  <rect class="inner" x="312" y="180" width="96" height="120" rx="6"/>
+  <text x="360" y="200" text-anchor="middle" class="pin" font-size="12">INPUT</text>
+  <text x="360" y="214" text-anchor="middle" class="lbl">3.81 mm plug</text>
+  <text x="326" y="240" class="pin">+5V</text>
+  <text x="326" y="270" class="pin">GND</text>
+  <text x="326" y="295" class="pin">SIG</text>
+
+  <rect class="inner" x="592" y="180" width="96" height="120" rx="6"/>
+  <text x="640" y="200" text-anchor="middle" class="pin" font-size="12">OUTPUT</text>
+  <text x="640" y="214" text-anchor="middle" class="lbl">3.81 mm plug</text>
+  <text x="606" y="240" class="pin">+12V</text>
+  <text x="606" y="270" class="pin">GND</text>
+  <text x="606" y="295" class="pin">SIG</text>
+
+  <rect class="inner" x="440" y="215" width="120" height="70" rx="6"/>
+  <text x="500" y="236" text-anchor="middle" class="pin" font-size="12">SW1</text>
+  <text x="500" y="252" text-anchor="middle" class="lbl">NPN  ⟷  PNP</text>
+  <text x="500" y="272" text-anchor="middle" class="warn">set to PNP</text>
+
+  <text x="500" y="330" text-anchor="middle" class="lbl">Housing: PCB_Housing_Top.stl + PCB_Housing_Bottom.stl</text>
+  <text x="500" y="348" text-anchor="middle" class="lbl">INPUT and OUTPUT plugs are not interchangeable</text>
+
+  <!-- Sensor -->
+  <rect class="box" x="760" y="140" width="200" height="150" rx="8"/>
+  <text x="860" y="163" text-anchor="middle" class="title">NBG-JS30P</text>
+  <text x="860" y="179" text-anchor="middle" class="sub">laser photoelectric — PNP output</text>
+  <text x="778" y="199" class="pin">Brn  +12V</text>
+  <text x="778" y="229" class="pin">Blu  0V</text>
+  <text x="778" y="259" class="pin">Blk  OUT</text>
+  <text x="900" y="229" text-anchor="middle" class="lbl">white wire</text>
+  <text x="900" y="243" text-anchor="middle" class="lbl">(if any): n/c</text>
+  <circle cx="860" cy="290" r="4" fill="#e02020"/>
+
+  <!-- bullet -->
+  <path class="laser" d="M860 294 V404"/>
+  <text x="878" y="352" class="lbl">laser</text>
+  <path d="M845 440 Q860 405 875 440 Z" fill="#b87333" stroke="#7a4a1a" stroke-width="1.5"/>
+  <rect x="845" y="440" width="30" height="50" fill="#d4b455" stroke="#8a7020" stroke-width="1.5"/>
+  <text x="860" y="515" text-anchor="middle" class="sub">bullet on the case</text>
+  <text x="860" y="530" text-anchor="middle" class="sub">at the seating station</text>
+
+  <!-- wires: Autodrive -> INPUT -->
+  <path class="pwrP" d="M220 236 H262 V236 H312"/>
+  <path class="pwrN" d="M220 266 H312"/>
+  <path class="sig"  d="M220 296 H240 V291 H312"/>
+
+  <!-- wires: OUTPUT -> sensor -->
+  <path class="pwrP" d="M688 236 H740 V195 H760"/>
+  <path class="pwrN" d="M688 266 H728 V225 H760"/>
+  <path class="sig"  d="M688 291 H716 V255 H760"/>
+
+  <!-- legend -->
+  <rect x="20" y="600" width="960" height="58" rx="8" fill="#fafafa" stroke="#ccc" stroke-width="1"/>
+  <line x1="35" y1="622" x2="75" y2="622" class="pwrP"/><text x="82" y="626" class="note">+ power (5 V or 12 V)</text>
+  <line x1="240" y1="622" x2="280" y2="622" class="pwrN"/><text x="287" y="626" class="note">GND</text>
+  <line x1="360" y1="622" x2="400" y2="622" class="sig"/><text x="407" y="626" class="note">signal</text>
+  <line x1="500" y1="622" x2="540" y2="622" class="laser"/><text x="547" y="626" class="note">laser beam</text>
+  <text x="35" y="648" class="note">Set SW1 to PNP before applying power. Confirm with a meter which Autodrive pin carries +5 V before landing it on the INPUT plug.</text>
+</svg>
